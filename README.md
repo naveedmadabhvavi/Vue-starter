@@ -1,4 +1,4 @@
-# walletapp
+# Basic Vue Starter 
 
 > A Vue.js project
 
