@@ -4,17 +4,16 @@
         <form @submit.prevent="submit()" >
             <div class="form-group">
                 <label for="email">Email Address:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"  v-model="email">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"  v-model="email" required>
             </div>
             <div class="form-group">
                 <label for="activationCode">Activation Code</label>
-                <input type="text" class="form-control" id="activationCode" placeholder="Enter activationCode" name="activationCode"  v-model="activationCode">
+                <input type="text" class="form-control" id="activationCode" placeholder="Enter activationCode" name="activationCode"  v-model="activationCode" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </template>
-
 <script>
     import store from '../../store'
     import axios from '../../http'

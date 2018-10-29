@@ -4,15 +4,15 @@
         <form @submit.prevent="submit()" >
             <div class="form-group">
                 <label for="oldloginpassword">old Password:</label>
-                <input type="oldloginpassword" class="form-control" id="oldloginpassword" placeholder="Enter email" name="oldloginpassword"  v-model="oldloginpassword">
+                <input type="oldloginpassword" class="form-control" id="oldloginpassword" placeholder="Enter email" name="oldloginpassword"  v-model="oldloginpassword" required>
             </div>
             <div class="form-group">
                 <label for="newloginpassword">New Password:</label>
-                <input type="newloginpassword" class="form-control" id="newloginpassword" placeholder="Enter email" name="newloginpassword"  v-model="newloginpassword">
+                <input type="newloginpassword" class="form-control" id="newloginpassword" placeholder="Enter email" name="newloginpassword"  v-model="newloginpassword" required>
             </div>
             <div class="form-group">
                 <label for="rloginpassword">Confirm Password:</label>
-                <input type="rloginpassword" class="form-control" id="rloginpassword" placeholder="Enter email" name="rloginpassword"  v-model="rloginpassword">
+                <input type="rloginpassword" class="form-control" id="rloginpassword" placeholder="Enter email" name="rloginpassword"  v-model="rloginpassword" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

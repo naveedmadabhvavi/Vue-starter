@@ -4,7 +4,7 @@
         <form @submit.prevent="submit()" >
             <div class="form-group">
                 <label for="email">Enter Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"  v-model="email">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"  v-model="email" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

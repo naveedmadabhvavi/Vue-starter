@@ -22,6 +22,10 @@ export default new Router({
     {
         path: '/forgotpassword',
         component: require('../components/auth/forgotpassword').default
+    },
+    {
+        path: '*',
+        component: require('../components/auth/login').default
     }
   ]
 })
